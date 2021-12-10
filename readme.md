@@ -59,3 +59,22 @@
         }
     }
   ```
+
+-- Predicate 
+```
+    class Predicate  {
+        constructor(arg) {
+            this.arg = arg; 
+        }
+        test(value) {
+            return arg ===value;
+        }
+    }
+    // version 1 
+    const predicate = new Predicate(names); 
+    const retValue = predicate.test("Manish");
+
+    // version 2
+    names.findIndex((name) => name=== "Manish")
+
+```
