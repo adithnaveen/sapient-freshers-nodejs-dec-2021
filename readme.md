@@ -78,3 +78,45 @@
     names.findIndex((name) => name=== "Manish")
 
 ```
+
+- Javascirpt object behaviour 
+
+```
+    function Hi() {}
+    function Bye extends Hi(){} (wrong)
+```
+
+- Java Script support class 
+
+```
+    -- in java 
+    class Employee {
+        private int empId; 
+        private String empName; 
+
+        public Employee() {}
+        public Employee(int empId, String empName) {
+            this.empId = empId;
+            this.empName = empName; 
+        }
+    }
+
+    -- in javascript 
+    class Employee {
+        
+        constructor(int empId, String empName) {
+            this.empId = empId;
+            this.empName = empName; 
+        }
+    }
+```
+
+-- pass function as argument 
+
+```
+    function divide(n1, n2, myfunction) {}
+
+    let newFunction = function() {}
+    divide(10, 20, newFunction)
+
+```
