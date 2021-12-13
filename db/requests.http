@@ -1,0 +1,18 @@
+GET  http://localhost:3000/posts
+
+###
+
+GET  http://localhost:3000/posts/1
+
+###
+POST http://localhost:3000/posts
+Content-Type: application/json
+
+{
+  "id": 5,
+  "title": "C Programming",
+  "author": "Yeshwanth Kanetkar"
+}
+
+####
+GET http://localhost:3000/users

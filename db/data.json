@@ -1,0 +1,53 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server new",
+      "author": "typicode"
+    },
+    {
+      "id": 2,
+      "title": "First Title",
+      "author": "Naveen"
+    },
+    {
+      "id": 3,
+      "title": "Sapient Node Book",
+      "author": "Harry"
+    },
+    {
+      "id": 4,
+      "title": "Second Title",
+      "author": "Naveen"
+    },
+    {
+      "id": 5,
+      "title": "C Programming",
+      "author": "Yeshwanth Kanetkar"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+  "users": [
+    {
+      "id": 1,
+      "name": "naveen",
+      "email": "naveen@probits.in",
+      "password": "mypassword"
+    }
+  ], 
+  "products" :[
+    {
+      "id":101, 
+      "name":"Apple"
+    }
+  ]
+}
