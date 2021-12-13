@@ -161,3 +161,5 @@ Teams
 -------
 # Day 2 
 -------
+
+- create a node js application which shall take name and age of the user, and will tell whether the user is eligible for voting or not provided age is > 18 and also check name should be min 5 chars 
