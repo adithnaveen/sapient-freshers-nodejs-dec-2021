@@ -1,0 +1,26 @@
+{
+    "idCounter": 3,
+    "contacts": [
+        {
+            "id": 1,
+            "name": "Naveen",
+            "email": "naveen@probits.in",
+            "phone": 12345678,
+            "city": "Bengaluru"
+        },
+        {
+            "id": 2,
+            "name": "Vivek",
+            "email": "vivek@gmail.com",
+            "phone": 23344565777,
+            "city": "mysuru"
+        },
+        {
+            "name": "harry",
+            "city": "Virginia",
+            "phone": 123455,
+            "email": "harry@barry.com",
+            "id": 3
+        }
+    ]
+}

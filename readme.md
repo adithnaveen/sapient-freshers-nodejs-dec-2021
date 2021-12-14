@@ -163,3 +163,57 @@ Teams
 -------
 
 - create a node js application which shall take name and age of the user, and will tell whether the user is eligible for voting or not provided age is > 18 and also check name should be min 5 chars 
+
+
+
+
+-------
+# Day 3 
+-------
+- Team1 
+  - Vaishali - XHR -> fetch completed, working on other screen 
+  - Vivek - working on feedback on CSS(layouting), working on media query 
+  - Manish Chaudhary - working on auth / bcrypt reading, routing 
+  - Varun - working on transaction page, working on fetch, admin dashboard 
+  - Pratik - FAQ page(stati page), forget password, in the db we are having few question and stored for particular user, when the user enters valid answer, then ask user with new screen and ask for new password (GDPR) 
+  - Aseem - working on price estimation screen based on weight and distance
+
+- new to convert project with npm + webpack + where every possible event handler 
+
+- Team 2
+  - Arpit - working on user dashboard, xhr to fetch, created folder structure 
+  - Maneesh - worked on folder structure, new delivery request (getting error with git) - 2:00- 2:30 
+  - Moaaz - fixing probs with login(grid layout), BL for login is not done - CSS, will work on admin page 
+  - Rohon - working on signup, aria, CSS, pricing page - creating HTML/ CSS 
+  - Pratim - admin and delivery details request 
+  - Nelson - Not Present 
+  - Misbahtaj - working on new complaint (dynamic page) - the complaint comes to admin and admin can respond to the complaint 
+
+
+
+https://nodejs.org/dist/latest-v16.x/docs/api/os.html#oshomedir
+-- 
+http://localhost:4000
+
+http://localhost:4000/newpage
+http://localhost:4000/somepage
+
+path param 
+https://github.com/adithnaveen/sapient-freshers-2021-jun-asde/tree/main/notes
+// (http://localhost:4000)(/example)(/101/misbah) - path param 
+
+query param  
+// http://localhost:4000/example/india/blr/?empid=101&empname=misbah
+
+
+wsindia/insurers-settle-claims-of-gen-rawat-brigadier-lidder-others-at-record-speed/ar-AARMHue?li=AAggbRN
+
+for(let i =0; i<this.data.contacts.length) {
+    this.data.contact[i] = contact; 
+}
+
+
+for(let i =0; i<this.data.contacts.length) {
+    this.data.contact[i].name = contact.name; 
+}
+
