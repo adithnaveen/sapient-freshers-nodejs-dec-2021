@@ -217,3 +217,135 @@ for(let i =0; i<this.data.contacts.length) {
     this.data.contact[i].name = contact.name; 
 }
 
+
+
+-------
+
+> cd git-works 
+> git pull - get all the files 
+> get pull = get fetch + git merge 
+
+
+
+
+
+--- 
+# Day 4
+---
+
+
+
+- Team1 
+  - Vaishali - XHR -> fetch completed, working on other screen 
+    - created a api with bcrypt  (POC) 
+    - working on forgot password and delivery dashboard 
+    - following branching strategy 
+  - Vivek - working on feedback on CSS(layouting), working on media query 
+    - merging the branches, handling utilities 
+    - working customer dashboard 
+    - need to work on admin dashboard - show graphs like how many delivery, profits etc, complaints shown which customer has 
+  - Manish Chaudhary - working on auth / bcrypt reading, routing 
+    - routing map, working on complaint management 
+  - Varun - working on transaction page, working on fetch, admin dashboard 
+    -  forgot password is done
+  - Pratik - FAQ page(static page), forgot password, in the db we are having few question and stored for particular user, when the user enters valid answer, then ask user with new screen and ask for new password (GDPR) 
+    - FAQ page is integrated 
+    - forgot password is given to varun from pratik 
+    - 
+  - Aseem - working on price estimation screen based on weight and distance
+    - working on estimation screen - front end is done, working on backend 
+    - working on Customer New Request - front end 
+
+- new to convert project with npm + webpack + where every possible event handler 
+
+- Team 2
+  - Arpit - working on user dashboard, xhr to fetch, created folder structure 
+    - complaints page, alert page (this is front end)
+    - working on utilitiy stuffs 
+    - need to work on branching strategy 
+    - Working on dashboard of delivery partner 
+  - Maneesh - worked on folder structure, new delivery request (getting error with git) - 2:00- 2:30 
+    - refractoring the folder structure 
+    - new delivery page and its working 
+    - need to work on pricing page - where the price is assigned based on some arithmetic operation With Rohon 
+  - Moaaz - fixing probs with login(grid layout), BL for login is not done - CSS, will work on admin page 
+    - working on account profile page - name, address, email, phone etc, 
+    - view complaints from all the users - admin view
+    - will try to show orders which user had made 
+  - Rohon - working on signup, aria, CSS, pricing page - creating HTML/ CSS 
+    - working on aria on signup page 
+    -  need to work on pricing page - where the price is assigned based on some arithmetic operation with Maneesh
+  - Pratim - admin and delivery details request 
+    - showing all requests page (order status), and customer details  in the tabular fashion 
+  - Nelson - Not Present 
+    - working on admin dashboard, to show list of complaints, recent sales, total amount of sales, total number of sales, number of delivery partners 
+  - Misbahtaj - working on new complaint (dynamic page) - the complaint comes to admin and admin can respond to the complaint 
+    - Not Present 
+    - working customer complaints page - customer view 
+
+------
+Delivery partner 
+    -> Delivery Partner Login -> Dashboard 
+        -> Show list of orders placed in the M/S Name 
+            -> click on the order details to show where the consignment to be shipped 
+            -> showing the fare and profits and other details 
+
+----
+Customer View 
+    -> Customer Login -> Dashboard 
+        -> Create a request 
+            -> for the consignment - delivery details + contact etc 
+            -> transaction/order history 
+            -> track existing order ? 
+        -> create complaints 
+-----
+Admin 
+    Admin Logins -> Dashboard 
+                      -> Various order 
+                        -> Order Details is shown 
+                            -> assign it to delivery partner 
+                      -> view complaints 
+                      -> Total Sales 
+                      -> Total Profits 
+
+
+--
+if(!id) {
+
+}
+
+
+---
+
+```
+- in node js + Mongoose 
+export const ContactSchema = new Schema({
+    firstName : {
+        type:String,
+        required:"Please Enter First Name"
+    },
+    lastName: {
+        type:String, 
+        required:"Please Enter Last Name"
+    },
+    email: {
+        type:String
+    },
+    phone:{
+        type:Number
+    },
+    created_date : {
+        type:Date,
+        default: Date.now
+    }
+});
+
+-- in java or c++ 
+class Contact {
+    String firstName; 
+    String lastName; 
+    String email; 
+    Integer Number; 
+    Date date; 
+}
+```
