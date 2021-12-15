@@ -1,7 +1,9 @@
 import {
         addNewEmployee, 
         getAllEmployees, 
-        getEmployeeById} from '../controllers/employee-controller'; 
+        getEmployeeById, 
+        updateEmployee, 
+    deleteEmployee} from '../controllers/employee-controller'; 
 
 const routes =(app) => {
     app.route("/employee")
@@ -16,12 +18,8 @@ const routes =(app) => {
         },addNewEmployee);
 
     app.route("/employee/:employeeID")
-        .put((req, res) => {
-            res.send("PUT Reuqest called");
-        })
-        .delete((req, res) => {
-            res.send("DELETE Request called");
-        })
+        .put(updateEmployee)
+        .delete(deleteEmployee)
         .get(getEmployeeById)
 }
 

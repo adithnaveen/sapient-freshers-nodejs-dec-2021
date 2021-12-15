@@ -37,7 +37,23 @@ export const getEmployeeById = (req, res) => {
     })
 }
 
-// update employee 
 
-// delete employee 
 
+export const updateEmployee = (req, res) => {
+    Employee.findOneAndUpdate({ _id: req.params.employeeID}, req.body, 
+            { new: true, useFindAndModify: false }, (err, employee) => {
+        if (err) {
+            res.send(err);
+        }
+        res.json(employee);
+    });
+}
+
+export const deleteEmployee = (req, res) => {
+    Employee.remove({ _id: req.params.employeeID}, (err, employee) => {
+        if (err) {
+            res.send(err);
+        }
+        res.json({ message: 'successfuly deleted employee'});
+    });
+}
