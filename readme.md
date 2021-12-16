@@ -349,3 +349,80 @@ class Contact {
     Date date; 
 }
 ```
+
+
+
+---
+# Day 5 
+--- 
+
+- [x] Need to work on YARN 
+- Work on PUG 
+- Introduction to Restful API (HATEOAS) - RMM 3 
+- Building views using Jade view engine
+• Introduction to View Engines
+• Jade (PUG)
+• Using blocks for layout
+• Displaying data
+• Working with forms
+- Thirst Party Middleware - winston - for loggers 
+- Getting Started with Node.js and DynamoDB
+- socket.io
+- Authenticating Node JS App with Passport.js
+- Using JWT for API Authentication
+- bcrypt - for passwords 
+- Node’s Built-in debugger
+
+-- 
+
+- Team1 
+  - Vaishali - XHR -> fetch completed, working on other screen 
+    - created a api with bcrypt  (POC) 
+    - working on forgot password and delivery dashboard 
+    - following branching strategy 
+  - Vivek - working on feedback on CSS(layouting), working on media query 
+    - merging the branches, handling utilities 
+    - working customer dashboard 
+    - need to work on admin dashboard - show graphs like how many delivery, profits etc, complaints shown which customer has 
+  - Manish Chaudhary - working on auth / bcrypt reading, routing 
+    - routing map, working on complaint management 
+  - Varun - working on transaction page, working on fetch, admin dashboard 
+    -  forgot password is done
+  - Pratik - FAQ page(static page), forgot password, in the db we are having few question and stored for particular user, when the user enters valid answer, then ask user with new screen and ask for new password (GDPR) 
+    - FAQ page is integrated 
+    - forgot password is given to varun from pratik 
+    - 
+  - Aseem - working on price estimation screen based on weight and distance
+    - working on estimation screen - front end is done, working on backend 
+    - working on Customer New Request - front end 
+
+- new to convert project with npm + webpack + where every possible event handler 
+- Your folder structure is completed - with proper .gitignore + every body are following branching strategy 
+
+- Team 2
+  - Arpit - working on user dashboard, xhr to fetch, created folder structure 
+    - complaints page, alert page (this is front end)
+    - working on utilitiy stuffs 
+    - need to work on branching strategy 
+    - Working on dashboard of delivery partner 
+  - Maneesh - worked on folder structure, new delivery request (getting error with git) - 2:00- 2:30 
+    - refractoring the folder structure 
+    - new delivery page and its working 
+    - need to work on pricing page - where the price is assigned based on some arithmetic operation With Rohon 
+  - Moaaz - fixing probs with login(grid layout), BL for login is not done - CSS, will work on admin page 
+    - working on account profile page - name, address, email, phone etc, 
+    - view complaints from all the users - admin view
+    - will try to show orders which user had made 
+  - Rohon - working on signup, aria, CSS, pricing page - creating HTML/ CSS 
+    - working on aria on signup page 
+    -  need to work on pricing page - where the price is assigned based on some arithmetic operation with Maneesh
+  - Pratim - admin and delivery details request 
+    - showing all requests page (order status), and customer details  in the tabular fashion 
+  - Nelson - Not Present 
+    - working on admin dashboard, to show list of complaints, recent sales, total amount of sales, total number of sales, number of delivery partners 
+  - Misbahtaj - working on new complaint (dynamic page) - the complaint comes to admin and admin can respond to the complaint 
+    - Not Present 
+    - working customer complaints page - customer view 
+
+- Your folder structure is completed - with proper .gitignore + every body are following branching strategy 
+
