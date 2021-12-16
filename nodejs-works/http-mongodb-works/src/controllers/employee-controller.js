@@ -6,20 +6,28 @@ const SALT_ROUNDS=10;
 
 const Employee = mongoose.model('Employee', EmployeeSchema);
 
-
+// to generate hash 
 async function hash(password) {
-    const salt = await bcrypt.genSalt(SALT_ROUNDS)
-    return  bcrypt.hash(password, salt);
+    const salt = await bcrypt.genSalt(SALT_ROUNDS);
+    const hashed = await bcrypt.hash(password, salt);
+    return hashed
 }
 
+// to compare the hash 
 async function compare(password, hashed) {
-    return bcrypt.compare(password, hashed)
+    const match = await bcrypt.compare(password, hashed);
+    return match;
 }
 
 
 // Save
-export const addNewEmployee = (req, res) => {
-    let newEmployee = new Employee(req.body);
+export const addNewEmployee = async (req, res) => {
+    let emp = req.body;
+    console.log("emp : " , emp);
+    emp.password = await hash(emp.password);
+    console.log("emp : " , emp);
+
+    let newEmployee = new Employee(emp);
 
     newEmployee.save((err, employee) => {
         if (err) {
@@ -60,18 +68,16 @@ export const authenticate =  (req, res) => {
 
 export const loginValidate = async (req, res) => {
     // Employee.findOne({firstName:req.params.firstName, password:Employee.comparePassword(req.params.password)})
+    console.log("Fetching for " ,  req.body);
     console.log("Fetching for " + req.body.firstName);
 
     Employee.findOne({ firstName: req.body.firstName }, (err, employee) => {
         if (err) {
             console.log("record not found");
         } else {
-            console.log("got validation ", employee);
-            if (!employee || !bcrypt.compareSync(req.body.password,  employee.password)) {
-                return false;
-            } else {
-                res.send({ message: "Login successful" })
-            }
+            console.log("got employee in validation:  ", employee);
+             compare(req.body.password, employee.password)
+                .then(resp );
         }
     });
 }

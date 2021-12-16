@@ -14,6 +14,8 @@ const routes =(app) => {
              console.log("you invoked POST Method");
              console.log("Request From " , req.originalUrl);
              console.log("Method is " , req.method);
+             console.log("body in controller " , req.body);
+             
              next();
         },addNewEmployee);
 

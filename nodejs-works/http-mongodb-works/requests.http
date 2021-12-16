@@ -1,0 +1,22 @@
+POST  http://localhost:4000/employee
+Content-Type: application/json
+Accept: */*
+
+{
+    "firstName" :"Kiran", 
+    "lastName" :"Kumar", 
+    "password" :"guess", 
+    "email" :"kumar@naveen.com",
+    "phone" :12345676
+}
+
+####
+
+POST http://localhost:4000/employee/login
+Content-Type: application/json
+Accept: */*
+
+{
+    "firstName" :"Kiran", 
+    "password" :"guess"
+}

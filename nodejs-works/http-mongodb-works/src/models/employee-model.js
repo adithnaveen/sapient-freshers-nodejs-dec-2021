@@ -1,5 +1,5 @@
 import mongoose from 'mongoose';
-import bcrypt from 'bcrypt';
+// import bcrypt from 'bcrypt';
 
 const Schema = mongoose.Schema;
 
@@ -10,7 +10,7 @@ export const EmployeeSchema = new Schema({
         required:"Please Enter First Name"
     },
     lastName: {
-        type:String, 
+        type:String,
         required:"Please Enter Last Name"
     },
     password: {
@@ -28,6 +28,8 @@ export const EmployeeSchema = new Schema({
     }
 });
 
+
+/*
 EmployeeSchema.pre('save', async function(next) {
     try {
         const salt = await bcrypt.genSalt(10); 
@@ -47,4 +49,4 @@ EmployeeSchema.post('save', async function preSave(next) {
         next(err);
     }
 })
- 
+ */ 
