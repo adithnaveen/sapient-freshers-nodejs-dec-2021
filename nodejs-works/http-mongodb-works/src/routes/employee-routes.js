@@ -3,7 +3,7 @@ import {
         getAllEmployees, 
         getEmployeeById, 
         updateEmployee, 
-    deleteEmployee} from '../controllers/employee-controller'; 
+    deleteEmployee, loginValidate} from '../controllers/employee-controller'; 
 
 const routes =(app) => {
     app.route("/employee")
@@ -21,6 +21,8 @@ const routes =(app) => {
         .put(updateEmployee)
         .delete(deleteEmployee)
         .get(getEmployeeById)
+    app.route("/employee/login")
+        .post(loginValidate); 
 }
 
 export default routes; 
