@@ -1,0 +1,11 @@
+POST  http://localhost:4000/employee
+Content-Type: application/json
+Accept: */*
+
+{
+    "firstName" :"harry", 
+    "lastName" :"peter", 
+    "password" :"guess", 
+    "email" :"harry@naveen.com",
+    "phone" :123465
+}

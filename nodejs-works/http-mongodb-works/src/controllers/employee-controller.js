@@ -4,8 +4,8 @@ import {EmployeeSchema} from '../models/employee-model';
 
 const Employee = mongoose.model('Employee', EmployeeSchema);
 
-// Save 
-export const addNewEmployee = (req, res) => {
+// Save
+export const addNewEmployee2 = (req, res) => {
     let newEmployee = new Employee(req.body);
 
     newEmployee.save((err, employee) => {
@@ -15,6 +15,23 @@ export const addNewEmployee = (req, res) => {
         res.json(employee);
     })
 }
+
+// save with await 
+
+export const addNewEmployee = async (req, res) => {
+    let newEmployee = new Employee(req.body);
+
+    try {
+    let retEmp = await  newEmployee.save();
+    res.send(retEmp);
+    }catch(err) {
+        console.log("Err :" + err);
+        res.send(err);
+    }
+}
+
+
+
 
 // get all Employees 
 export const getAllEmployees = (req, res) => {
