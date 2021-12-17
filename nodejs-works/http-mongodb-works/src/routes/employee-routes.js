@@ -1,3 +1,32 @@
+
+/**
+ * @swagger
+ *   paths:
+ *     /employee:
+ *        get:
+ *          summary: Get all employees
+ *          tags: [AddEmployee]
+ *          responses:
+ *            "200":
+ *              description: List of Employees
+ *              content:
+ *                application/json
+ */
+ 
+/**
+ * @swagger
+ *   paths:
+ *    /courses:
+ *      get:
+ *        summary: Lists all the courses
+ *        tags: [Course]
+ *        responses:
+ *          "200":
+ *            description: The list of courses.
+ *            content:
+ *              application/json:
+ */
+
 import {
         addNewEmployee, 
         getAllEmployees, 
