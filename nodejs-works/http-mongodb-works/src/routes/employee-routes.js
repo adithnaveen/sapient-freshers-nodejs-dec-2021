@@ -3,8 +3,20 @@ import {
         getAllEmployees, 
         getEmployeeById, 
         updateEmployee, 
-    deleteEmployee} from '../controllers/employee-controller'; 
+    deleteEmployee,
+    authenticate} from '../controllers/employee-controller'; 
 
+
+/**
+ * @swagger
+ * /employee:
+ *   get:
+ *     description: To get all the employees 
+ *     responses: 
+ *       200:
+ *         description: List of Employees got from DB (getAllEmployees)
+ */
+ 
 const routes =(app) => {
     app.route("/employee")
         .get(getAllEmployees)
@@ -21,6 +33,9 @@ const routes =(app) => {
         .put(updateEmployee)
         .delete(deleteEmployee)
         .get(getEmployeeById)
+
+    app.route("/authenticate")
+        .post(authenticate);
 }
 
 export default routes; 

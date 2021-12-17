@@ -3,9 +3,20 @@ Content-Type: application/json
 Accept: */*
 
 {
-    "firstName" :"harry", 
-    "lastName" :"peter", 
-    "password" :"guess", 
-    "email" :"harry@naveen.com",
-    "phone" :123465
+    "firstName" :"pratik", 
+    "lastName" :"singh", 
+    "password" :"keepguessing", 
+    "email" :"pratik@gmailcom",
+    "phone" :7788996655
+}
+
+### 
+POST http://localhost:4000/authenticate 
+Content-Type: application/json
+Accept: */*
+
+{
+    "email":"pratik@gmailcom", 
+    "password" :"keepguessing"
+
 }

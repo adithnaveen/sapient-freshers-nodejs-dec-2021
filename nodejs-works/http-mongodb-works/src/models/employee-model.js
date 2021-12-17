@@ -13,6 +13,9 @@ export const EmployeeSchema = new Schema({
         type:String, 
         required:"Please Enter Last Name"
     },
+    password: {
+        type:String
+    },
     email: {
         type:String
     },
