@@ -432,10 +432,7 @@ class Contact {
 ---
 # Day 6
 ---
-
-
--- 
-
+ 
 - Team1 
   - Vaishali - XHR -> fetch completed, working on other screen 
     - created a api with bcrypt  (POC) 
@@ -537,3 +534,28 @@ Pending
 -- to create unique key in mongodb 
   - for a unique key in mongodb there can be max 1 null value with the field 
   - > db.employees.createIndex({email:1}, {unique:true})
+ 
+
+
+---
+# Day 7 
+---
+
+Team1 :
+1. login to be done with JWT / password 
+2. forgot password estiamation to be done 
+3. some problems in the backend with few end points 
+
+Team2 :
+1. some page in admin dashboard is pending 
+2. there was no communcation in last 2 days 
+
+
+
+- MDD - Model Driven Development 
+- DDD - Domain Driven Development 
+- BDD - Behaviour Driven Development 
+- TDD - Test Driven Development 
+
+Top Down Approach - MDD -> DDD -> BDD -> TDD 
+Bottom Up Approach - TDD -> BDD -> DDD -> MDD 
