@@ -1,12 +1,15 @@
 const express = require("express");
 const bodyParser = require("body-parser");
+
 const cors = require("cors");
 const mongoose = require("mongoose");
 
 const app = express();
+const http = require('http').Server(app);
+const io = require('socket.io')(http);
 
 app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({extended:false}));
+app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static(__dirname));
 app.use(cors());
 
@@ -52,7 +55,14 @@ app.post("/messages", (req, res) => {
     let message = new Message(req.body);
     message.save();
     console.log("Server: Message saved.");
+    io.emit("message", req.body);
     res.sendStatus(200);
+})
+
+
+// to establish client and server duplex communication
+io.on("connection", (socket) => {
+    console.log("User Connection estd...");
 })
 
 mongoose.connect(dbUrl, (err) => {
@@ -60,4 +70,4 @@ mongoose.connect(dbUrl, (err) => {
 })
 
 // http://localhost:3000/messages
-app.listen(3000, () => console.log("Server started..."));
+var server = http.listen(3000, () => console.log("Server started...", server.address().port));
