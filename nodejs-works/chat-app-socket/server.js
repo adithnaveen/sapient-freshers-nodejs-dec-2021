@@ -1,6 +1,6 @@
 const express = require("express");
 const bodyParser = require("body-parser");
-
+const winston = require("winston");
 const cors = require("cors");
 const mongoose = require("mongoose");
 
@@ -15,6 +15,18 @@ app.use(cors());
 
 mongoose.Promise = Promise; 
 let dbUrl = "mongodb://localhost/chatDb";
+
+const logConfiguration = {
+    'transports': [
+        new winston.transports.Console(), 
+        new winston.transports.File({
+            level:'info',
+            filename:'logs/sample.log' 
+        })
+    ]
+};
+const logger = winston.createLogger(logConfiguration);
+
 
 let Message = mongoose.model("Message", {
     name:String,
@@ -47,6 +59,9 @@ let Message = mongoose.model("Message", {
 // version 2 with mongodb 
 app.get("/messages", (req, res) => {
     Message.find({}, (err, messages) => {
+        logger.log('info', 'Getting all messages');
+        logger.log('error', 'Getting all messages');
+
         res.send(messages);
     })
 })
@@ -55,7 +70,7 @@ app.post("/messages", (req, res) => {
     let message = new Message(req.body);
     message.save();
     console.log("Server: Message saved.");
-    io.emit("message", req.body);
+    io.emit("message1", req.body);
     res.sendStatus(200);
 })
 
