@@ -559,3 +559,19 @@ Team2 :
 
 Top Down Approach - MDD -> DDD -> BDD -> TDD 
 Bottom Up Approach - TDD -> BDD -> DDD -> MDD 
+
+
+
+
+.route("/transaction")
+    .get(getAllTransactions)
+    .post(addNewTransaction);
+.route("/api/login)
+  .post("/authenticate")
+.route("/customer")
+  .post("/api/customer)
+  .get("/api/customer/:customerID")
+  ....
+
+
+  
