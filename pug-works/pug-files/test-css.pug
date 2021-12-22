@@ -1,0 +1,30 @@
+doctype html
+html 
+    head
+        link(rel="stylesheet" href="style.css")
+        style. 
+            p {
+                color:blue;
+                text-decoration:underline;
+            }
+    body
+        p this is HTML File With CSS 
+        h1 This is H1 Style coming from external css 
+        p(style='text-align:center') This in some style with inline 
+
+        - var user = {description: 'foo bar baz'}
+        - var authorised = false
+        #user
+        if user.description
+            h2.green Description
+            p.description= user.description
+        else if authorised
+            h2.blue Description
+            p.description.
+            User has no description,
+            why not add one...
+        else
+            h2.red Description
+            p.description User has no description
+
+        

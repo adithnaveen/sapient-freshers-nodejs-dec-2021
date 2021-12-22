@@ -581,3 +581,40 @@ Bottom Up Approach - TDD -> BDD -> DDD -> MDD
 - socket.io program again 
 - jade -> pug 
 - Passport -> Maneesh 
+
+
+Authentication 
+
+- JWT - "email@yoursite.com" -> "SecretKey" -> new key is generated and given to user (mygrofers)
+  - Your Grofers -> JWT - "email@yoursite.com" -> "SecretKey" -> new key is generated and given to user 
+  - Some Grofers -> JWT - "email@yoursite.com" -> "SecretKey" -> new key is generated and given to user 
+
+Google - we will do OAuth (1.0/2.0)
+
+MyGrofers - Login with Google -> Google -> Checks -> gives ack -> Site uses 
+YourGrofers- Login with Google -> Google -> Checks -> gives ack -> Site uses 
+SomeGrofers- Login with Google -> Google -> Checks -> gives ack -> Site uses 
+SomeSite- Login with Google -> Google -> Checks -> gives ack -> Site uses 
+YourSite- Login with Google -> Google -> Checks -> gives ack -> Site uses 
+MindMeister - Login with Google -> Google -> Checks -> gives ack -> Site uses 
+            - Login with Yahoo -> Yahoo -> Checks -> gives ack -> Site uses 
+            - Login with Apple -> Apple -> Checks -> gives ack -> Site uses 
+            - Login with Database -> Database -> Checks -> gives ack -> Site uses 
+            - Login with Local Storage -> Local Storage -> Checks -> gives ack -> Site uses 
+
+            - Passport 
+              - crypty 
+
+  
+
+
+.... 
+
+
+- npm i -g pug-cli  - the tool will be installed globally on the system 
+  - You need to initialize with npm init 
+    - npm i --save pug
+    - npm i --save-dev
+
+
+
