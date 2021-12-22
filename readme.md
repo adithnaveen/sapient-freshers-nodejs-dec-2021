@@ -574,4 +574,10 @@ Bottom Up Approach - TDD -> BDD -> DDD -> MDD
   ....
 
 
-  
+--- 
+# Day 9 
+--- 
+
+- socket.io program again 
+- jade -> pug 
+- Passport -> Maneesh 
