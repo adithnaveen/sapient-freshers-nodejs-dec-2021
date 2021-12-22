@@ -1,0 +1,39 @@
+###
+GET http://localhost:4040/user
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyRW1haWwiOiJuYXZlZW5AZ21haWwuY29tIiwiaWF0IjoxNjQwMTU1NDgwLCJleHAiOjE2NDAxNTcyODB9.I1N3_Xv4e7DW-_j7jZhiB3Adk-jwjP0ZX4YaGXWKmlc
+
+
+###
+
+
+GET  http://localhost:4040/somesecurelink
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyRW1haWwiOiJuYXZlZW5AZ21haWwuY29tIiwiaWF0IjoxNjQwMTUzNjg0LCJleHAiOjE2NDAxNTU0ODR9.6_1riXGtKHXSiFsDbBW-ussYgIDcJAb6hajpimnxaMQ
+
+
+
+###
+POST http://localhost:4040/user 
+Content-Type: application/json
+
+{
+    "userName":"vaishally", 
+    "email" :"vaishally@gmail.com",
+    "password" :"test123", 
+    "securityQuestionNumber":2, 
+    "securityQuestionAnswer":"city",
+    "phone":12345, 
+    "role" :"customer"
+}
+
+
+###
+POST http://localhost:4040/authenticate
+Content-Type: application/json
+
+{
+    "email" :"naveen@gmail.com",
+    "password" :"test"
+}
+
